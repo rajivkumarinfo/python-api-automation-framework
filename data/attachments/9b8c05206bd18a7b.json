@@ -1,0 +1,17 @@
+{
+  "status_code": 200,
+  "body": {
+    "bookingid": 4499,
+    "booking": {
+      "firstname": "Chen",
+      "lastname": "Wei",
+      "totalprice": 4500,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2025-06-01",
+        "checkout": "2025-06-30"
+      },
+      "additionalneeds": "Late checkout"
+    }
+  }
+}

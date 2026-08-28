@@ -1,0 +1,17 @@
+{
+  "status_code": 200,
+  "body": {
+    "bookingid": 4507,
+    "booking": {
+      "firstname": "Kimberly",
+      "lastname": "Smith",
+      "totalprice": 143,
+      "depositpaid": false,
+      "bookingdates": {
+        "checkin": "2025-01-01",
+        "checkout": "2025-01-10"
+      },
+      "additionalneeds": "a"
+    }
+  }
+}
