@@ -1,0 +1,14 @@
+{
+  "status_code": 200,
+  "body": {
+    "firstname": "Michael",
+    "lastname": "UpdatedLastName",
+    "totalprice": 1675,
+    "depositpaid": false,
+    "bookingdates": {
+      "checkin": "2025-01-01",
+      "checkout": "2025-01-10"
+    },
+    "additionalneeds": "fall"
+  }
+}
