@@ -1,3 +1,11 @@
+name: Python API Automation CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +28,6 @@ jobs:
       - name: Run tests with coverage + Allure
         run: |
           pytest -v --disable-warnings --cov=. --cov-report=xml --cov-report=term-missing --alluredir=allure-results
-
 
       - name: Download previous report history
         uses: actions/checkout@v3
