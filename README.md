@@ -1,1 +1,2 @@
-# python-api-automation-framework
+API & Microservices Test Harness
+A lightweight backend/API test automation framework for contract validation and regression testing of REST services, demonstrated against the public Restful-Booker API.

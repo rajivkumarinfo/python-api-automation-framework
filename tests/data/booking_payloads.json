@@ -1,0 +1,45 @@
+[
+  {
+    "name": "standard_booking",
+    "payload": {
+      "firstname": "Jim",
+      "lastname": "Brown",
+      "totalprice": 111,
+      "depositpaid": true,
+      "bookingdates": { "checkin": "2025-01-01", "checkout": "2025-01-05" },
+      "additionalneeds": "Breakfast"
+    }
+  },
+  {
+    "name": "zero_price_booking",
+    "payload": {
+      "firstname": "Amelia",
+      "lastname": "Rivera",
+      "totalprice": 0,
+      "depositpaid": false,
+      "bookingdates": { "checkin": "2025-03-10", "checkout": "2025-03-12" },
+      "additionalneeds": "None"
+    }
+  },
+  {
+    "name": "long_stay_booking",
+    "payload": {
+      "firstname": "Chen",
+      "lastname": "Wei",
+      "totalprice": 4500,
+      "depositpaid": true,
+      "bookingdates": { "checkin": "2025-06-01", "checkout": "2025-06-30" },
+      "additionalneeds": "Late checkout"
+    }
+  },
+  {
+    "name": "no_additional_needs_field",
+    "payload": {
+      "firstname": "Olu",
+      "lastname": "Adeyemi",
+      "totalprice": 250,
+      "depositpaid": false,
+      "bookingdates": { "checkin": "2025-09-01", "checkout": "2025-09-04" }
+    }
+  }
+]
