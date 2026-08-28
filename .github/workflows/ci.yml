@@ -21,7 +21,7 @@ jobs:
         run: |
           pytest -v --disable-warnings --cov=. --cov-report=xml --cov-report=term-missing --alluredir=allure-results
 
-      # 👇 NEW STEP: Copy previous history from gh-pages branch
+
       - name: Download previous report history
         uses: actions/checkout@v3
         with:
