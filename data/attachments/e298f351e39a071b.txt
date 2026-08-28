@@ -1,0 +1,15 @@
+INFO     src.client.base_client:base_client.py:109 Request: {
+  "method": "POST",
+  "url": "https://restful-booker.herokuapp.com/auth",
+  "params": null,
+  "json": {
+    "username": "admin",
+    "password": "password123"
+  }
+}
+INFO     src.client.base_client:base_client.py:109 Response: {
+  "status_code": 200,
+  "body": {
+    "token": "57f3231facac293"
+  }
+}

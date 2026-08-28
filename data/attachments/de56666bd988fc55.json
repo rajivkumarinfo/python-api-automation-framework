@@ -1,0 +1,16 @@
+{
+  "status_code": 200,
+  "body": {
+    "bookingid": 2309,
+    "booking": {
+      "firstname": "Olu",
+      "lastname": "Adeyemi",
+      "totalprice": 250,
+      "depositpaid": false,
+      "bookingdates": {
+        "checkin": "2025-09-01",
+        "checkout": "2025-09-04"
+      }
+    }
+  }
+}

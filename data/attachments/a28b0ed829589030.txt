@@ -1,0 +1,10 @@
+INFO     src.client.base_client:base_client.py:109 Request: {
+  "method": "GET",
+  "url": "https://restful-booker.herokuapp.com/ping",
+  "params": null,
+  "json": null
+}
+INFO     src.client.base_client:base_client.py:109 Response: {
+  "status_code": 201,
+  "body": "Created"
+}

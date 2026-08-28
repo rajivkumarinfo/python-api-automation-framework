@@ -1,0 +1,43 @@
+INFO     src.client.base_client:base_client.py:109 Request: {
+  "method": "POST",
+  "url": "https://restful-booker.herokuapp.com/booking",
+  "params": null,
+  "json": {
+    "firstname": "Chen",
+    "lastname": "Wei",
+    "totalprice": 4500,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2025-06-01",
+      "checkout": "2025-06-30"
+    },
+    "additionalneeds": "Late checkout"
+  }
+}
+INFO     src.client.base_client:base_client.py:109 Response: {
+  "status_code": 200,
+  "body": {
+    "bookingid": 2308,
+    "booking": {
+      "firstname": "Chen",
+      "lastname": "Wei",
+      "totalprice": 4500,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2025-06-01",
+        "checkout": "2025-06-30"
+      },
+      "additionalneeds": "Late checkout"
+    }
+  }
+}
+INFO     src.client.base_client:base_client.py:109 Request: {
+  "method": "DELETE",
+  "url": "https://restful-booker.herokuapp.com/booking/2308",
+  "params": null,
+  "json": null
+}
+INFO     src.client.base_client:base_client.py:109 Response: {
+  "status_code": 201,
+  "body": "Created"
+}

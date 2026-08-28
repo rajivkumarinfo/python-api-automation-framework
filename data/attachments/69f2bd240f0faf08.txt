@@ -1,0 +1,10 @@
+INFO     src.client.base_client:base_client.py:109 Request: {
+  "method": "GET",
+  "url": "https://restful-booker.herokuapp.com/booking/999999999",
+  "params": null,
+  "json": null
+}
+INFO     src.client.base_client:base_client.py:109 Response: {
+  "status_code": 404,
+  "body": "Not Found"
+}
