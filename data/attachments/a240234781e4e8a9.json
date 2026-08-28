@@ -1,0 +1,17 @@
+{
+  "status_code": 200,
+  "body": {
+    "bookingid": 2535,
+    "booking": {
+      "firstname": "Amelia",
+      "lastname": "Rivera",
+      "totalprice": 0,
+      "depositpaid": false,
+      "bookingdates": {
+        "checkin": "2025-03-10",
+        "checkout": "2025-03-12"
+      },
+      "additionalneeds": "None"
+    }
+  }
+}

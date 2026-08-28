@@ -1,0 +1,17 @@
+{
+  "status_code": 200,
+  "body": {
+    "bookingid": 2543,
+    "booking": {
+      "firstname": "Maria",
+      "lastname": "Cunningham",
+      "totalprice": 754,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2025-01-01",
+        "checkout": "2025-01-10"
+      },
+      "additionalneeds": "training"
+    }
+  }
+}
