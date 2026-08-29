@@ -1,0 +1,17 @@
+{
+  "status_code": 200,
+  "body": {
+    "bookingid": 2066,
+    "booking": {
+      "firstname": "Jacqueline",
+      "lastname": "Smith",
+      "totalprice": 562,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2025-01-01",
+        "checkout": "2025-01-10"
+      },
+      "additionalneeds": "wife"
+    }
+  }
+}
