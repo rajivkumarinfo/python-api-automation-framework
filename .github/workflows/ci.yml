@@ -33,7 +33,7 @@ jobs:
       # Add run date/time metadata for Allure
       - name: Add run date to Allure environment
         run: |
-          echo "RunDate=$(date)" >> allure-results/environment.properties
+          echo "reportName=$(date '+%Y-%m-%d %H:%M:%S')" >> allure-results/environment.properties
           echo "CommitHash=${{ github.sha }}" >> allure-results/environment.properties
           echo "WorkflowRun=${{ github.run_number }}" >> allure-results/environment.properties
 
