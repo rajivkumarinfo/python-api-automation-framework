@@ -1,0 +1,17 @@
+{
+  "status_code": 200,
+  "body": {
+    "bookingid": 3847,
+    "booking": {
+      "firstname": "Ryan",
+      "lastname": "Schroeder",
+      "totalprice": 956,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2025-01-01",
+        "checkout": "2025-01-10"
+      },
+      "additionalneeds": "member"
+    }
+  }
+}
