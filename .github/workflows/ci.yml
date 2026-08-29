@@ -30,12 +30,23 @@ jobs:
         run: |
           pytest -v --disable-warnings --cov=. --cov-report=xml --cov-report=term-missing --alluredir=allure-results
 
-      # Add run date/time metadata for Allure
-      - name: Add run date to Allure environment
+      # Add environment info (for Environment tab)
+      - name: Add run environment info
         run: |
-          echo "reportName=$(date '+%Y-%m-%d %H:%M:%S')" >> allure-results/environment.properties
+          echo "RunDate=$(date)" >> allure-results/environment.properties
           echo "CommitHash=${{ github.sha }}" >> allure-results/environment.properties
           echo "WorkflowRun=${{ github.run_number }}" >> allure-results/environment.properties
+
+      # Add executor.json (for Trend chart labels)
+      - name: Add run metadata to Allure executor
+        run: |
+          echo '{
+            "name": "GitHub Actions",
+            "type": "github",
+            "reportName": "'"$(date '+%Y-%m-%d %H:%M:%S')"'",
+            "buildOrder": "'"${{ github.run_number }}"'",
+            "buildName": "'"${{ github.sha }}"'"
+          }' > allure-results/executor.json
 
       # Preserve history for Allure trend
       - name: Download previous report history
@@ -62,7 +73,7 @@ jobs:
           allure generate allure-results -o allure-report --clean
 
       - name: Deploy report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-report
