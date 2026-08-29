@@ -1,0 +1,9 @@
+{
+  "method": "GET",
+  "url": "https://restful-booker.herokuapp.com/booking",
+  "params": {
+    "firstname": "Toni",
+    "lastname": "Christensen"
+  },
+  "json": null
+}
